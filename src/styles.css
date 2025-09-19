@@ -1,0 +1,46 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --accent-2:#7c3aed;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; background:var(--bg); color:#0f172a;}
+.app{max-width:1200px;margin:28px auto;padding:18px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.title{font-size:22px;font-weight:700}
+.header-right{display:flex;gap:12px;align-items:center}
+.pill{background:var(--card);padding:8px 12px;border-radius:999px;box-shadow:0 1px 2px rgba(2,6,23,0.06)}
+.grid{display:grid;grid-template-columns:360px 1fr;gap:20px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.small{font-size:13px;color:var(--muted)}
+.filter-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.member-list{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.member-card{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;border:1px solid #eef2ff;background:linear-gradient(180deg,#fff,#fbfdff)}
+.member-left{display:flex;gap:12px;align-items:center}
+.avatar{width:44px;height:44px;border-radius:999px;background:#eef2ff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.member-info{display:flex;flex-direction:column}
+.member-name{font-weight:700}
+.member-meta{font-size:13px;color:var(--muted)}
+.status-badge{padding:6px 10px;border-radius:999px;font-size:12px}
+.status-Working{background:#dbeafe;color:#1e3a8a}
+.status-Break{background:#fff7ed;color:#92400e}
+.status-Meeting{background:#eef2ff;color:#1e3a8a}
+.status-Offline{background:#f3f4f6;color:#374151}
+
+.actions{display:flex;gap:8px}
+.icon-btn{padding:8px;border-radius:8px;border:1px solid #e6edf3;background:white;cursor:pointer}
+.summary-row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.summary-card{flex:1;padding:10px;border-radius:8px;background:#fff;border:1px solid #f1f5f9;text-align:center}
+.right-top{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:12px}
+
+.form-row{display:flex;gap:8px;align-items:center}
+input,select,button{padding:8px;border-radius:8px;border:1px solid #e6edf3;background:white}
+.task-list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+
+.progress-bar{height:10px;background:#eef2f9;border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;background:var(--accent);border-radius:999px}
+
+.charts{display:flex;gap:12px;margin-top:12px}
+.chart-card{flex:1;padding:12px;border-radius:8px;background:#fff;border:1px solid #f1f5f9}
